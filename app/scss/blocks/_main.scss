@@ -1,0 +1,72 @@
+.main {
+	background: url(../images/backlight.png) right top no-repeat;
+	border-bottom-right-radius: 10px;
+	padding-top: 133px;
+	padding-bottom: 180px;
+	&__inner	{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__content {
+		max-width: 570px;
+		width: 100%;
+		position: relative;
+		z-index: 100;
+	}
+	&__box {
+		margin-bottom: 68px;
+	}
+	&__title {
+		margin-bottom: 9px;
+	}
+	&__subtitle {
+		font-size: 20px;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+	&__advertising {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 44px;
+		margin-bottom: 84px;
+	}
+	&__btn {
+		@extend %btn;
+		margin-bottom: 33px;
+	}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+	&__item {
+		font-size: 12px;
+		padding-left: 39px;
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 35px;
+		}
+		&::after {
+			content: '';
+			width: 35px;
+			height: 35px;
+			position: absolute;
+			left: 0;
+			top: -7px;
+		}
+		&--1 {
+			&::after {
+				background: url(../images/solarium-icon.svg);
+			}
+		}
+		&--2 {
+			&::after {
+				background: url(../images/cryosauna-icon.svg);
+			}
+		}
+		&--3 {
+			&::after {
+				background: url(../images/hamam-icon.svg);
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.footer {
+	font-size: 12px;
+	line-height: 15px;
+	background-color: #432545;
+	position: relative;
+	z-index: 100;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 42px 0 51px;
+	}
+	&__item {
+		max-width: 183px;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.social {
+	display: flex;
+	&__item {
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+}

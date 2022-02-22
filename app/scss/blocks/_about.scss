@@ -1,0 +1,42 @@
+.about {
+	position: relative;
+	z-index: 100;
+	padding-bottom: 61px;
+	&__inner {
+		text-align: center;
+	}
+	&__title {
+		@extend %title;
+		margin-bottom: 46px;
+	}
+	&__text-inner {
+		max-width: 871px;
+		margin: 0 auto 81px;
+	}
+	&__wrapper {
+		max-width: 560px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	&__item {
+		width: 141px;
+		margin-bottom: 57px;
+	}
+	&__icon {
+		width: 84px;
+		height: 84px;
+		margin: 0 auto 12px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__item-text {
+		font-weight: 500;
+		color: $accent;
+	}
+}

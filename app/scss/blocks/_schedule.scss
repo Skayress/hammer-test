@@ -1,0 +1,18 @@
+.schedule {
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+	&__text {
+		font-size: 30px;
+		font-weight: 800;
+		line-height: 37px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		max-width: 528px;
+		margin-right: 17px;
+	}
+	&__btn {
+		@extend %btn;
+	}
+}

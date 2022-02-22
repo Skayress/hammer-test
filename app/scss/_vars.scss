@@ -1,0 +1,34 @@
+// Переменные
+$accent: #C7E80A;
+$bg: #242222;
+
+
+// Наследование
+%btn {
+	font-size: 20px;
+	font-weight: 600;
+	width: 333px;
+	padding: 25px 0;
+	color: #242222;
+	background-color: $accent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+	border-radius: 30px;
+	transition: all .3s;
+	&:hover {
+		background-color: #E3FD50;
+	}
+}
+
+%title {
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 37px;
+	color: #E5E5E5;
+}
+
+// Миксины
+
+

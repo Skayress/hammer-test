@@ -1,0 +1,10 @@
+/* Изменения алгоритма расчёта ширины и высоты элементов */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
